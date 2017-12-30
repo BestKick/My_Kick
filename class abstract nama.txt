@@ -1,0 +1,41 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package latihanjava4;
+
+abstract class Elktro{
+    abstract void jalan();
+    String nama;
+}
+class AC3 extends Elktro{
+    public AC3 (String nama){
+        this.nama= nama;
+    }
+    void jalan(){
+        System.out.println("hidupkan  " +this.nama);
+    }
+}
+
+class TV2 extends Elktro{
+    public TV2 (String nama){
+        this.nama= nama;
+    }
+    void jalan(){
+        System.out.println("hidupkan  " +this.nama);
+    }
+}
+
+public class classabstract3 {
+    public static void main(String[] args) {
+      AC3 ak = new AC3("AC");
+      ak.jalan();
+      TV2 ak1 = new TV2("TV");
+      ak1.jalan();
+        
+        
+        
+    }
+    
+}
